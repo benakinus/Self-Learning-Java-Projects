@@ -37,6 +37,9 @@ public class Account {
     
      Account artosAccount = new Account("Arto's account", 100.00);
      Account artosSwissAccount = new Account("Arto's account in Switzerland", 1000000.00);
+     // Question 1b
+     Account MattAccount = new Account("Matthew's Account", 1000.00);
+     Account MyAccount = new Account("My Account", 0.00);
 
 	      System.out.println("Initial state");
 		  System.out.println(artosAccount);
@@ -45,6 +48,10 @@ public class Account {
           artosAccount.withdraw(20);
           System.out.println("The balance of Arto's account is now: " + artosAccount.balance());
           artosSwissAccount.deposit(200);
+          System.out.println("The balance of Arto's other account is now: " + artosSwissAccount.balance());
+	    MattAccount.withdraw(100);
+          System.out.println("The balance of Arto's account is now: " + artosAccount.balance());
+          MyAccount.deposit(100);
           System.out.println("The balance of Arto's other account is now: " + artosSwissAccount.balance());
 
           System.out.println("End state");
